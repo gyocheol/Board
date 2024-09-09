@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class BoardApplication {
 
 	public static void main(String[] args) {
+		System.setProperty("spring.config.name", "application, application-db, application-login, application-redis");
 		SpringApplication.run(BoardApplication.class, args);
 	}
 

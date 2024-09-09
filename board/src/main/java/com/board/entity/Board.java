@@ -1,4 +1,4 @@
 package com.board.entity;
 
-public class user {
+public class Board {
 }
