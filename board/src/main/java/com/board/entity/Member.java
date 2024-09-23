@@ -20,10 +20,12 @@ public class Member {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String username;
+    private String identity;
 
     @Column(nullable = false)
     private String password;
+
+    private String name;
 
     public void encodeStudentPassword(PasswordEncoder passwordEncoder){
         this.password = passwordEncoder.encode(password);
