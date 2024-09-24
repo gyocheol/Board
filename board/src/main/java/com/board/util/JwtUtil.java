@@ -15,7 +15,7 @@ public class JwtUtil {
     @Value("${spring.security.securityKey}")
     private String secret_key;
     private static final long accessToken_expiration = 24 * 60 * 60 * 1000; // 1일
-    private static final long refreshToken_expiration = accessToken_expiration * 7; // 7일
+    private static final long refreshToken_expiration = accessToken_expiration * 30; // 30일
     private RedisTemplate<String, Object> redisTemplate;
 
     /**
